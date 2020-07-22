@@ -1,0 +1,38 @@
+cd /home/pi/Desktop/nanpy/Final
+
+rm -f  musiclist
+rm -f drivepath
+cd /media/pi/
+c=$( ls ) 
+cd $c
+
+
+exec>/home/pi/Desktop/nanpy/Final/musiclist
+
+ls -R -1|grep .mp3
+exec>/home/pi/Desktop/nanpy/Final/drivepath 
+
+echo /media/pi/$c
+exec>/dev/tty
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
